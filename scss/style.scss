@@ -1,0 +1,16 @@
+@import "./gameBoard";
+@import "./text";
+
+.player {
+    width: 60px;
+    height: 60px;
+    background-color: $hover-color;
+    position: absolute;
+}
+
+.obstacle {
+    width: 30px;
+    height: 60px;
+    background-color: $secondary-color;
+    position: absolute;
+}

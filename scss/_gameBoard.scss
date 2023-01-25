@@ -1,0 +1,21 @@
+$background-color: #E0E9C4;
+$primary-color: #4B564D;
+$secondary-color: #252525;
+
+.grid {
+    width: 800px;
+    height: 500px;
+    display: block;
+    margin: auto;
+    border: solid 60px $secondary-color;
+    position: relative;
+    background-color: $background-color;
+}
+
+#floor {
+    height: 60px;
+    width: 800px;
+    background-color: $primary-color;
+    position: relative;
+    bottom: -365px;
+}

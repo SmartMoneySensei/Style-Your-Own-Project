@@ -1,0 +1,56 @@
+$secondary-color: #252525;
+$hover-color: #9AA57C;
+
+body {
+    font-family: 'Courier New', Courier, monospace;;
+    font-size: large;
+    color: $secondary-color;
+    cursor: default;
+    background-color: $primary-color;
+}
+
+#title {
+    width: 200px;
+    justify-content: left;
+    display: flex;
+    order: 0;
+    margin-left: 22.410px;
+}
+
+@mixin playButton {
+    &:hover{
+        color: $hover-color;
+    }
+    &{
+        width: 200px;
+        display: flex;
+        justify-content: center;
+        order: 1;
+        @content
+    }
+}
+
+#play{
+    @include playButton;
+}
+
+#timer {
+    width: 200px;
+    display: flex;
+    justify-content: right;
+    order: 2;
+    margin-right: 22.410px;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.controls {
+    color: $secondary-color;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 800px;
+}
